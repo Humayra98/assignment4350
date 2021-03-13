@@ -4,7 +4,12 @@ stack overflow webscrapper
 Author: Humayra Anjum Rafi
 ---------------------------------------------------------------
 
-**Run the following commands to run the code from IDE:
+App Description:
+Most hot questions and most recent questions of a particular tag T on Stack Overflow (https://stackoverflow.com) can be fetched and viewed. View questions and their related answers, comments, votes, dates. Displays the titles of the 10 newest questions and the 10 most voted questions posted in the past week related to tag T, on one page. In this way we can easily keep track of the relevant questions. In addition, we can read the full information of these questions in a convenient way. 
+
+---------------------------------------------------------------
+
+**Run the following commands to run the code from IDE:**
 
 Setup environment:
 pip3 install -r requirements.txt
@@ -20,7 +25,7 @@ http://localhost:5000/
 
 -----------------------------------------------------------------
 
-**Run the following commands to run the app from Docker image:
+**Run the following commands to run the app from Docker image:**
 
 Pull Image:
 docker pull humayraanjum/swe2-assignment:latest
