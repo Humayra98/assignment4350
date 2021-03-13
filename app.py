@@ -120,13 +120,15 @@ def index():
             masterList.append(dictionary)
         #print(i)
         err = ""
+        sol = ""
         if(i==0 or j==0):
             err = "Failed to load one or both lists since you got re-routed to a verification page 'Human verification'.\n You need to confirm you are not a Robot by clicking on a CAPTCHA box."
+            sol = f"Open a stack overflow search page https://stackoverflow.com/questions/tagged/{tag} in a separate tab, click the recaptcha box and reload page."
             print(err)
 
         end = time.process_time()
         res_time = end-start #end processing timer
-        return render_template('index.html', masterList = masterList, res_time = res_time, err = Markup(err), err_len = len(err))
+        return render_template('index.html', masterList = masterList, res_time = res_time, err = Markup(err), err_len = len(err), sol = Markup(sol))
     else:#if not POST
         return render_template('index.html', masterList = masterList, res_time = res_time)
 
