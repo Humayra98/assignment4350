@@ -123,7 +123,7 @@ def index():
         sol = ""
         if(i==0 or j==0):
             err = "Failed to load one or both lists since you got re-routed to a verification page 'Human verification'.\n You need to confirm you are not a Robot by clicking on a CAPTCHA box."
-            sol = f"Open a stack overflow search page https://stackoverflow.com/search?tab=Votes&pagesize=15&q=%5b{tag}%5dcreated%3a7d..1d in a separate tab, click the recaptcha box and reload page."
+            sol = f"Please click the following link <a href=https://stackoverflow.com/search?tab=Votes&pagesize=15&q=%5b{tag}%5dcreated%3a7d..1d>StackOverflow Human Verification</a> in a separate new tab, click the recaptcha box and reload page."
             print(err)
 
         end = time.process_time()
