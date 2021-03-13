@@ -37,7 +37,7 @@ Pull Image:
 docker pull humayraanjum/swe2-assignment:latest
 
 Running app:
-docker run -p 8000:5000 assignment
+docker run -p 8000:5000 humayraanjum/swe2-assignment
 
 Browse:
 http://localhost:8000/
