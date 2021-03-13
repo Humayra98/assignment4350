@@ -47,6 +47,9 @@ http://localhost:8000/
 DockerHub repo:
 [https://hub.docker.com/repository/docker/humayraanjum/swe2-assignment]
 
+Tag: (latest)
+https://hub.docker.com/repository/registry-1.docker.io/humayraanjum/swe2-assignment/tags?page=1&ordering=last_updated
+
 -----------------------------------------------------------------
 
 Browser actions:
