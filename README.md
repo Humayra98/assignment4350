@@ -70,4 +70,5 @@ Technology:
 5. stlylesheet in ./static/css/style.css
 6. Dockerfile for initiating docker image
 7. requirements.txt has all required packages listed
+8. Used web scrapping/crawling to retrieve info from the site directly. No use of API.
 

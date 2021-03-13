@@ -60,7 +60,7 @@ def index():
     if(request.method == 'POST'):#if searched
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36'}
         tag = request.form['tag']
-        vote_url = f'https://stackoverflow.com/questions/tagged/{tag}?tab=votes&pagesize=15'
+        vote_url = f'https://stackoverflow.com/search?tab=Votes&pagesize=15&q=%5b{tag}%5d%20created%3a7d..1d' #gets info from past week
         new_url = f'https://stackoverflow.com/questions/tagged/{tag}?tab=newest&pagesize=15'
         
         start = time.process_time()
