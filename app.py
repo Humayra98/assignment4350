@@ -63,7 +63,7 @@ def index():
         vote_url = f'https://stackoverflow.com/search?tab=Votes&pagesize=15&q=%5b{tag}%5d%20created%3a7d..1d' #gets info from past week
         new_url = f'https://stackoverflow.com/questions/tagged/{tag}?tab=newest&pagesize=15'
         
-        start = time.process_time()
+        start = time.process_time() #start processing timer
         vote = requests.get(vote_url, headers=headers)
         new = requests.get(new_url, headers=headers)
 
@@ -111,7 +111,7 @@ def index():
             masterList.append(dictionary)
 
         end = time.process_time()
-        res_time = end-start #end of processing
+        res_time = end-start #end processing timer
         return render_template('index.html', masterList = masterList, res_time = res_time)
     else:#if not POST
         return render_template('index.html', masterList = masterList, res_time = res_time)
