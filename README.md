@@ -63,3 +63,9 @@ Technology:
 
 1. Used python for backend logic
 2. Flask framework
+3. The main logic is in app.py
+4. The html pages are in ./templates 
+5. stlylesheet in ./static/css/style.css
+6. Dockerfile for initiating docker image
+7. requirements.txt has all required packages listed
+
