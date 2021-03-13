@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Stack Overflow Tags</title>
+{% endblock %}
+
+{% block body %}
+<div class="results">
+  <!-- Search tags -->
+  <form action="/" method="POST">
+    <input type="text" name="tag" id="tag" placeholder="Search for a tag">
+    <input type="submit" value="Search">
+  </form>
+  <h2>Recent and popular questions</h2>
+  <!-- List all questions -->
+  {% for question in masterList %}
+  <button type="button" class="collapsible"><b>{{question.title}}</b><br><br><u>[Last Edited , Created ] : </u> {{question.created}}<br><u>Votes:</u> {{question.votes}}</button>
+  <div class="content">
+      <p><b>DESCRIPTION:</b></p>
+      {% for dictionary in question.answers %}
+        <p>{{dictionary.body}}<br><u>Votes:</u> {{dictionary.votes}}<br><u>[Last Edited , Created ] :</u> {{dictionary.dates}}</p>
+        <p><u><i><b>COMMENTS</b></i></u></p>
+        {% for comment in dictionary.comments %}
+            <p>=>{{comment}}</p>
+        {% endfor %}
+        <p><b><i><u>ANSWER:</u></i></b></p>
+      {% endfor %}
+  </div>
+  {% endfor %}
+  <p><i>Response time: {{res_time}}</i></p>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+</div>
+{% endblock %}
