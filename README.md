@@ -53,7 +53,7 @@ Browser actions:
 
 1. Type in a keyword/tag related to your search.
 2. Click search.
-3. Result shows a list of 10 newest and 10 highest(total 20) voted questions.
+3. Result shows a list of 10 newest and 10 highest(total 20) voted questions from past week.
 4. Clicking on each question opens a collapsible displaying the description, answers and respective comments as a thread.
 5. The creation date, last edit date as well as the score/vote on each question, answer and comment is also shown.
 6. The response time can be seen at the bottom of the page.
