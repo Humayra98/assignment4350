@@ -37,7 +37,7 @@ docker run -p 8000:5000 assignment
 Browse:
 http://localhost:8000/
 
-Docker repo:
+DockerHub repo:
 [https://hub.docker.com/repository/docker/humayraanjum/swe2-assignment]
 
 -----------------------------------------------------------------
