@@ -19,35 +19,35 @@ Most hot questions and most recent questions of a particular tag T on Stack Over
 
 **Run the following commands to run the code from IDE:**
 
-Setup environment:
-pip3 install -r requirements.txt
+Setup environment:  
+`pip3 install -r requirements.txt`
 
-Running in debug mode:
-python app.py
+Running in debug mode:  
+`python app.py`
 
-Running without debugger:
-python -m flask run
+Running without debugger:  
+`python -m flask run`
 
-Browse:
+Browse:  
 http://localhost:5000/
 
 -----------------------------------------------------------------
 
 **Run the following commands to run the app from Docker image:**
 
-Pull Image:
-docker pull humayraanjum/swe2-assignment:latest
+Pull Image:  
+`docker pull humayraanjum/swe2-assignment:latest`
 
-Running app:
-docker run -p 8000:5000 humayraanjum/swe2-assignment
+Running app:  
+`docker run -p 8000:5000 humayraanjum/swe2-assignment`
 
-Browse:
+Browse:  
 http://localhost:8000/
 
-DockerHub repo:
+DockerHub repo:  
 [https://hub.docker.com/repository/docker/humayraanjum/swe2-assignment]
 
-Tag: (latest)
+Tag: (latest)  
 https://hub.docker.com/repository/registry-1.docker.io/humayraanjum/swe2-assignment/tags?page=1&ordering=last_updated
 
 -----------------------------------------------------------------
